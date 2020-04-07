@@ -120,8 +120,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"factorial/factorial.js":[function(require,module,exports) {
 'use strict';
 
-var n;
-
 window.factorial = function (n) {
   if (n < 0) {
     return "WTF??";
@@ -129,7 +127,7 @@ window.factorial = function (n) {
 
   var factorial = 1;
 
-  for (var a = 1; a <= n; a++) {
+  for (var a = 2; a <= n; a++) {
     factorial *= a;
   }
 
@@ -163,7 +161,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52388" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56692" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

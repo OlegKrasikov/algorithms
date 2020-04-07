@@ -120,11 +120,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"quadrants/quadrants.js":[function(require,module,exports) {
 'use strict';
 
-var x;
-var y;
-var q;
-
 window.quadrants = function (x, y) {
+  var q;
+
   if (x > 0 && y > 0) {
     q = 1;
   } else if (x < 0 && y > 0) {
@@ -167,7 +165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52388" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56692" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

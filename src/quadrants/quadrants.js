@@ -1,10 +1,9 @@
 'use strict';
 
-let x;
-let y;
-let q;
-
 window.quadrants = (x, y) => {
+    
+    let q;
+
     if (x > 0 && y > 0) {
         q = 1;
     } else if (x < 0 && y > 0) {
